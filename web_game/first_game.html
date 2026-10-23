@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>rock paper scissors</title>
+</head>
+<body>
+    <p> <b> 
+        rock paper scissors game
+    </b> </p>
+    <button onclick ="
+    const randomNumber = Math.floor(Math.random() * 3);
+    let computerChoice= ' ';
+    if (randomNumber>=0 && randomNumber<1) {
+        computerChoice = 'rock';
+    } else if (randomNumber >=1 && randomNumber<2) {
+        computerChoice = 'paper';
+    } else {
+        computerChoice = 'scissors';
+        }
+    console.log(computerChoice);
+    if (computerChoice === 'rock') {
+        alert('computer chose rock and you chose rock so it is a tie');
+    } else if (computerChoice === 'paper') {
+        alert('computer chose paper and you chose rock so you lose');
+    } else {
+        alert('computer chose scissors and you chose rock so you win');
+    }
+    ">rock</button>
+    <button onclick="
+    const randomNumber = Math.floor(Math.random() * 3);
+    let computerChoice= ' ';      
+    if (randomNumber>=0&& randomNumber<1) {
+        computerChoice = 'paper';
+    }
+    else if (randomNumber>=1 && randomNumber<2) {
+        computerChoice = 'rock';
+    } else {
+        computerChoice = 'scissors';
+    }
+    console.log(computerChoice);
+    if (computerChoice === 'rock') {
+        alert('computer chose rock and you chose paper so you win');
+    } else if (computerChoice === 'paper') {
+        alert('computer chose paper and you chose paper so it is a tie');
+    } else {
+        alert('computer chose scissors and you chose paper so you lose');
+    }
+    "> paper</button>
+    <button onclick="
+    const randomNumber = Math.floor(Math.random() * 3);
+    let computerChoice= ' ';
+    if (randomNumber>=0 && randomNumber<1) {
+        computerChoice = 'scissors';
+    }
+    else if (randomNumber>=1 && randomNumber<2) {
+        computerChoice = 'rock';
+    } else {
+        computerChoice = 'paper';
+    }
+    console.log(computerChoice);
+    if (computerChoice === 'rock') {
+        alert('computer chose rock and you chose scissors so you lose');
+    } else if (computerChoice === 'paper') {
+        alert('computer chose paper and you chose scissors so you win');
+    } else {
+        alert('computer chose scissors and you chose scissors so it is a tie');
+    }
+    "> scissors</button>
+    <script>
+    </script>
+</body>
+</html>   
